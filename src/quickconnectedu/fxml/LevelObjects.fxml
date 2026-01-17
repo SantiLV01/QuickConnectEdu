@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;"
+            xmlns="http://javafx.com/javafx/24.0.1" 
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.ComponentsController">
+
+    <children>
+        <Label layoutX="280" layoutY="20" style="-fx-font-size: 20px; -fx-font-weight: bold;"
+               text="Catálogo de Componentes" />
+
+        <!-- 1: Batería -->
+        <ImageView fx:id="bateria" fitHeight="100" fitWidth="100" layoutX="60" layoutY="100">
+            <image>
+                <Image url="@../images/bateria.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="80" layoutY="210" text="Batería" style="-fx-font-size: 14px;" />
+
+        <!-- 2: Motor -->
+        <ImageView fx:id="motor" fitHeight="100" fitWidth="100" layoutX="200" layoutY="100">
+            <image>
+                <Image url="@../images/motor.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="225" layoutY="210" text="Motor" style="-fx-font-size: 14px;" />
+
+        <!-- 3: Cables -->
+        <ImageView fx:id="cables" fitHeight="100" fitWidth="100" layoutX="340" layoutY="100">
+            <image>
+                <Image url="@../images/cables.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="360" layoutY="210" text="Cables" style="-fx-font-size: 14px;" />
+
+        <!-- 4: LED -->
+        <ImageView fx:id="led" fitHeight="100" fitWidth="100" layoutX="480" layoutY="100">
+            <image>
+                <Image url="@../images/led.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="505" layoutY="210" text="LED" style="-fx-font-size: 14px;" />
+
+        <!-- 5: Interruptor -->
+        <ImageView fx:id="interruptor" fitHeight="100" fitWidth="100" layoutX="620" layoutY="100">
+            <image>
+                <Image url="@../images/interruptor.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="635" layoutY="210" text="Interruptor" style="-fx-font-size: 14px;" />
+
+        <!-- 6: Resistencia -->
+        <ImageView fx:id="resistencia" fitHeight="100" fitWidth="100" layoutX="60" layoutY="300">
+            <image>
+                <Image url="@../images/resistencia.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="80" layoutY="410" text="Resistencia" style="-fx-font-size: 14px;" />
+
+    </children>
+</AnchorPane>
+

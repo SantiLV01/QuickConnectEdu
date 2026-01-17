@@ -1,0 +1,31 @@
+.title-label {
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+.menu-button {
+    -fx-background-color: teal;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+
+.menu-button:hover {
+    -fx-background-color: #009688;
+}
+
+.circle-button {
+    -fx-background-radius: 50%;
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-font-size: 24px;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+
+.circle-button:hover {
+    -fx-background-color: lightgray;
+}

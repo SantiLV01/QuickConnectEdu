@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.LevelsController"
+      alignment="CENTER"
+      spacing="20"
+      style="-fx-padding: 30; -fx-background-color: #f0f0f0;">
+
+    <Text text="Selecciona un Nivel" style="-fx-font-size: 24px;"/>
+
+    <Button text="Nivel 1" fx:id="btnLevel1" onAction="#startLevel1"/>
+    <Button text="Nivel 2" fx:id="btnLevel2" onAction="#startLevel2"/>
+    <Button text="Nivel 3" fx:id="btnLevel3" onAction="#startLevel3"/>
+    
+    <Button text="Volver al Menú" onAction="#backToMenu" style="-fx-background-color: #ff6666; -fx-text-fill: white;"/>
+</VBox>

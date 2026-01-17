@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="670.0" prefWidth="1200" style="-fx-background-color: white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/24.0.1" fx:controller="quickconnectedu.controllers.TutorialController">
+   <ImageView fitHeight="676.0" fitWidth="1200.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/21.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="132.0" fitWidth="804.0" layoutX="229.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/Borde2tutorial.png" />
+      </image>
+   </ImageView>
+
+    <!-- Instrucciones -->
+    <Label layoutX="276.0" layoutY="217.0" prefHeight="30.0" prefWidth="711.0" style="-fx-text-fill: black; -fx-font-size: 20px;" text="Conecta correctamente los componentes para que el circuito funcione. Empieza" />
+
+    <!-- Botón Empezar -->
+    <Button fx:id="startBtn" layoutX="847.0" layoutY="402.0" onAction="#onStart" prefHeight="48.0" prefWidth="155.0" style="-fx-background-color: #00c853; -fx-text-fill: white; -fx-font-size: 16px; -fx-background-radius: 30; -fx-padding: 10 20;" text="Empezar" />
+
+    <!-- Botón Volver -->
+    <Button fx:id="backBtn" layoutX="83.0" layoutY="93.0" onAction="#onBack" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ff5252; -fx-text-fill: white; -fx-font-size: 16px; -fx-background-radius: 30; -fx-padding: 10 20;" text="Volver" />
+
+    <!-- Botones circulares (como en Configuración) -->
+    <Button fx:id="homeBtn" layoutX="1055.0" layoutY="335.0" onAction="#onHome" prefHeight="48.0" prefWidth="51.0" styleClass="circle-button" text="🏠" />
+
+    <Button fx:id="configBtn" layoutX="1055.0" layoutY="417.0" onAction="#onConfig" prefHeight="48.0" prefWidth="51.0" styleClass="circle-button" text="⚙" />
+
+    <Button fx:id="soundBtn" layoutX="1055.0" layoutY="483.0" onAction="#onSound" prefHeight="48.0" prefWidth="51.0" styleClass="circle-button" text="🔊" />
+
+    <!-- Iconos decorativos -->
+    <ImageView fitHeight="75.0" fitWidth="81.0" layoutX="1033.0" layoutY="311.0" preserveRatio="true">
+        <image>
+            <Image url="@../images/Casita.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fitHeight="89.0" fitWidth="88.0" layoutX="1030.0" layoutY="386.0" preserveRatio="true">
+        <image>
+            <Image url="@../images/Configur.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fitHeight="75.0" fitWidth="71.0" layoutX="1045.0" layoutY="470.0" preserveRatio="true">
+        <image>
+            <Image url="@../images/Sonido.png" />
+        </image>
+    </ImageView>
+   <ImageView fitHeight="228.0" fitWidth="593.0" layoutX="199.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/Borde%20tutorial.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="99.0" fitWidth="96.0" layoutX="68.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/volver.png" />
+      </image>
+   </ImageView>
+   <Label layoutX="276.0" layoutY="247.0" style="-fx-text-fill: black; -fx-font-size: 20px;" text="con una batería, resistencia y un LED. Recuerda que la polaridad del LED importa.”">
+      <font>
+         <Font size="10.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="69.0" fitWidth="179.0" layoutX="835.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/Empezare.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="75.0" fitWidth="315.0" layoutX="443.0" layoutY="116.0">
+      <image>
+         <Image url="@../../../../../../../Downloads/programacion/QuickConnect/Imagenes/Tutorial.png" />
+      </image>
+   </ImageView>
+
+</AnchorPane>

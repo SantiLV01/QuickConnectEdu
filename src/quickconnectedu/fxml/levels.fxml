@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="662.0" prefWidth="1182.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quickconnectedu.controllers.LevelsController">
+
+   <ImageView fitHeight="673.0" fitWidth="1214.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/21.png" />
+      </image>
+   </ImageView>
+
+  
+   <Button fx:id="btnBack" layoutX="99.0" layoutY="85.0" onAction="#backToMenu" prefHeight="79.0" prefWidth="83.0" style="-fx-background-radius: 50; -fx-background-color: red; -fx-text-fill: white; -fx-font-size: 18px;" text="←" />
+
+   
+   <ProgressBar fx:id="progressPoints" layoutX="859.0" layoutY="86.0" prefHeight="25.0" prefWidth="168.0" progress="0.5" style="-fx-accent: orange; -fx-control-inner-background: white; -fx-border-color: black; -fx-border-width: 2;" />
+   <Label layoutX="1062.0" layoutY="86.0" prefHeight="25.0" prefWidth="69.0" style="-fx-font-size: 14px; -fx-text-fill: black; -fx-font-weight: bold;" text="1000 PTS" />
+
+
+   <ProgressBar fx:id="progressTimer" layoutX="133.0" layoutY="548.0" prefHeight="25.0" prefWidth="168.0" progress="1.0" style="-fx-accent: red; -fx-control-inner-background: white; -fx-border-color: black; -fx-border-width: 2;" />
+   <Label fx:id="lblTimer" layoutX="314.0" layoutY="548.0" prefHeight="25.0" prefWidth="69.0" style="-fx-font-size: 14px; -fx-text-fill: black; -fx-font-weight: bold;" text="60s" />
+    
+ 
+   <Rectangle fx:id="dropZone" arcHeight="20" arcWidth="20" fill="linear-gradient(#d9d9d9, #f2f2f2)" height="302.0" layoutX="123.0" layoutY="199.0" stroke="black" strokeWidth="2" width="495.0" />
+
+
+   <Label layoutX="750.0" layoutY="152.0" prefHeight="40.0" prefWidth="211.0" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: black;" text="PIEZAS ARRASTRABLES">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+
+  
+   <Button layoutX="724.0" layoutY="208.0" prefHeight="47.0" prefWidth="269.0" style="-fx-background-radius: 20; -fx-background-color: #000080; -fx-text-fill: white;" />
+   <Button layoutX="724.0" layoutY="281.0" prefHeight="47.0" prefWidth="269.0" style="-fx-background-radius: 20; -fx-background-color: #000080; -fx-text-fill: white;" />
+   <Button layoutX="724.0" layoutY="361.0" prefHeight="47.0" prefWidth="263.0" style="-fx-background-radius: 20; -fx-background-color: #000080; -fx-text-fill: white;" />
+   <Button layoutX="724.0" layoutY="437.0" prefHeight="47.0" prefWidth="263.0" style="-fx-background-radius: 20; -fx-background-color: #000080; -fx-text-fill: white;" />
+
+   <ImageView fx:id="opcion1" fitHeight="47.0" fitWidth="269.0" layoutX="724.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true" />
+   <ImageView fx:id="opcion2" fitHeight="47.0" fitWidth="269.0" layoutX="724.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true" />
+   <ImageView fx:id="opcion3" fitHeight="47.0" fitWidth="263.0" layoutX="724.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" />
+   <ImageView fx:id="opcion4" fitHeight="47.0" fitWidth="263.0" layoutX="724.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true" />
+
+  
+   <Button fx:id="btnProbar" layoutX="772.0" layoutY="520.0" prefHeight="40.0" prefWidth="150.0" onAction="#probarNivel" style="-fx-background-radius: 20; -fx-background-color: linear-gradient(#00ff99, #009933); -fx-text-fill: white; -fx-font-weight: bold;" text="PROBAR" /> <!-- AGREGADO fx:id y evento -->
+
+   
+   <Button fx:id="btnHome" layoutX="1055.0" layoutY="360.0" prefHeight="59.0" prefWidth="61.0" style="-fx-background-radius: 50; -fx-background-color: orange; -fx-font-size: 18px;" text="🏠" />
+   <Button fx:id="btnConfig" layoutX="1059.0" layoutY="443.0" prefHeight="59.0" prefWidth="61.0" style="-fx-background-radius: 50; -fx-background-color: orange; -fx-font-size: 18px;" text="⚙" />
+   <Button fx:id="btnSound" layoutX="1066.0" layoutY="520.0" prefHeight="59.0" prefWidth="61.0" style="-fx-background-radius: 50; -fx-background-color: orange; -fx-font-size: 18px;" text="🔊" />
+
+ 
+   <ImageView fitHeight="73.0" fitWidth="75.0" layoutX="1049.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/Casita.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="79.0" fitWidth="83.0" layoutX="1048.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/Configur.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="76.0" fitWidth="69.0" layoutX="1062.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/Sonido.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="59.0" fitWidth="150.0" layoutX="772.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/Boton%20probar.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="119.0" fitWidth="95.0" layoutX="93.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/volver.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="79.0" fitWidth="261.0" layoutX="524.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/nivel.png" />
+      </image>
+   </ImageView>
+
+</AnchorPane>
